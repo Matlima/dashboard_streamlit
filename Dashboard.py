@@ -33,6 +33,8 @@ receita_mensal = dados.set_index('Data da Compra').groupby(pd.Grouper(freq= 'M')
 receita_mensal['Ano'] = receita_mensal['Data da Compra'].dt.year
 receita_mensal['Mes'] = receita_mensal['Data da Compra'].dt.month_name()
 
+receita_categorias = dados.groupby('Categoria do Produto')[['Preço']].sum().sort_values('Preço', ascending= False)
+
 ## Gráficos
 fig_mapa_receita = px.scatter_geo(receita_estados,
                                   lat = 'lat',
@@ -55,15 +57,31 @@ fig_receita_mensal = px.line(receita_mensal,
 
 fig_receita_mensal.update_layout(yaxis_title = 'Receita')
 
+fig_receita_estados = px.bar(receita_estados.head(),
+                             x = 'Local da compra',
+                             y = 'Preço',
+                             text_auto = True,
+                             title = 'Top estados (receita)')
+
+fig_receita_estados.update_layout(yaxis_title = 'Receita')
+
+fig_receita_categorias = px.bar(receita_categorias,
+                                text_auto = True,
+                                title = 'Receita por categorias')
+
+fig_receita_categorias.update_layout(yaxis_title = 'Receita')
+
 ## Visualização no streamlit
 # Aplicando filtros e metricas:
 coluna1, coluna2 = st.columns(2)
 with coluna1:
     st.metric('Receita', formata_numero(dados['Preço'].sum(), 'R$'))
     st.plotly_chart(fig_mapa_receita, use_container_width= True)
+    st.plotly_chart(fig_receita_estados, use_container_width= True)
 with coluna2:
     st.metric('Quantidade de vendas', formata_numero(dados.shape[0]))
     st.plotly_chart(fig_receita_mensal, use_container_width= True)
+    st.plotly_chart(fig_receita_categorias, use_container_width= True)
 
 # Exibindo dataframe na aplicação
 st.dataframe(dados)
