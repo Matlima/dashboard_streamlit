@@ -47,8 +47,8 @@ Nesta página, você pode criar uma tabela filtrada dos dados de vendas e efetua
 ```
 
 2. **Instale as dependências:**
-```bash
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 ```
 
 3. **Execute o aplicativo:**
