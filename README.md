@@ -32,12 +32,11 @@ Nesta página, você pode criar uma tabela filtrada dos dados de vendas e efetua
 - Envie para o repositório original (git push origin feature-nova-funcionalidade).
 - Crie um Pull Request.
 
-### Licença
+## Licença
   Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-### Contato
+## Contato
   Para mais informações, entre em contato através do e-mail: limarios18@outlook.com.
-
 
 ## Como Executar
 
