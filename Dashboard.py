@@ -150,7 +150,7 @@ fig_vendas_categorias.update_layout(showlegend=False, yaxis_title='Quantidade de
 
 ## Visualização no streamlit
 aba1, aba2, aba3 = st.tabs(['Receita', 'Quantidade de vendas', 'Vendedores'])
-style_metric_cards()
+# style_metric_cards()
 with aba1:
     coluna1, coluna2 = st.columns(2)
     with coluna1:
