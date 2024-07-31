@@ -41,14 +41,14 @@ Nesta página, você pode criar uma tabela filtrada dos dados de vendas e efetua
 ## Como Executar
 
 1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/Matlima/dashboard_streamlit.git
-   cd dashboard_streamlit
+```bash
+git clone https://github.com/Matlima/dashboard_streamlit.git
+cd dashboard_streamlit
 ```
 
 2. **Instale as dependências:**
-   ```bash
-   pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
 ```
 
 3. **Execute o aplicativo:**
