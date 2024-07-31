@@ -46,12 +46,12 @@ Nesta página, você pode criar uma tabela filtrada dos dados de vendas e efetua
    cd dashboard_streamlit
 ```
 
-2. Instale as dependências:
+2. **Instale as dependências:**
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Execute o aplicativo:
+3. **Execute o aplicativo:**
 ````bash
 streamlit run app.py
 ```
