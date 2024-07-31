@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import pandas as pd
 import plotly.express as px
-from streamlit_extras.metric_cards import style_metric_cards
+# from streamlit_extras.metric_cards import style_metric_cards
 
 st.set_page_config(layout= 'wide')
 
