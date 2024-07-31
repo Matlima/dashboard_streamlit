@@ -18,13 +18,13 @@ Cada aba permite o uso de controladores e filtros para ajustar os dados exibidos
 ### 2. Gerar Tabela e Download
 Nesta página, você pode criar uma tabela filtrada dos dados de vendas e efetuar o download da tabela em diferentes formatos, incluindo CSV.
 
-### 3. Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Streamlit**: Para a criação de dashboards interativos.
 - **Pandas**: Manipulação e análise de dados.
 - **Plotly**: Criação de gráficos interativos.
 
-### 4. Contribuição
+## Contribuição
 
 - Faça um fork do repositório.
 - Crie uma nova branch (git checkout -b feature-nova-funcionalidade).
